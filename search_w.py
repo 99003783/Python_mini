@@ -37,12 +37,14 @@ class search_w:
             if word_search1:
 
                 count += 1
+   
                 # for printing the prev word and next word of the desired word
                 str78 = (file_sp[i-1] + ' ' + file_sp[i] + ' ' + file_sp[i+1])
                 self.write_file.write(str(count)+':')
                 self.write_file.write(str(str78) + '\n')
                 # for getting the no. of word repeated
         self.write_file.write('no. of times word comes:' + str(count) + '\n')
+        print(count)
 for i in range(saw):     # to take multiple output from the user
     # variable declared for the class
     sample = search_w()
