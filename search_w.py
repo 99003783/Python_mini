@@ -14,7 +14,7 @@ saw = int(input("enter the no. to search for words: \n"))
 class search_w:
     def __init__(self):               # method for mandatory inputs
         # variable for opening the file
-        self.file_new = open(r"C:\Users\99003783\Documents\GitHub\Python_module\mini_project\input.txt")
+        self.file_new = open("input.txt",'r')
         # making the file to string using .read method
         self.filter_str = self.file_new.read()
         # taking word from user to search
